@@ -1,0 +1,17 @@
+# This is an example PKGBUILD file. Use this as a start to creating your own,
+# and remove these comments. For more information, see 'man PKGBUILD'.
+# NOTE: Please fill out the license field for your package! If it is unknown,
+# then please put 'unknown'.
+
+pkgname=dummy-a
+pkgver=9999
+pkgrel=4
+pkgdesc="dummy a"
+arch=(x86_64)
+url="https://github.com/artix-packages/dummy-a"
+license=('GPL')
+depends=(filesystem)
+
+package() {
+	cd "$pkgname-$pkgver"
+}
